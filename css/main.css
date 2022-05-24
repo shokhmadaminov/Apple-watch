@@ -63,3 +63,72 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* SITE HEADER STYLES */
+.site-header {
+    padding: 30px 0px;
+}
+.site-header-container {
+    display: flex;
+    align-items: center;
+}
+.site-logo-link {
+    display: flex;
+    margin-right: auto;
+}
+.site-logo-img {
+    width: 35px;
+    height: 42px;
+    object-fit: contain;
+}
+.sitenav {
+    margin-right: 40px;
+}
+.sitenav-list {
+    display: flex;
+    list-style: none;
+}
+.sitenav-item:not(:last-child) {
+    margin-right: 30px;
+}
+.sitenav-link {
+    line-height: 22.5px;
+    color: var(--text-color);
+    text-decoration: none;
+    padding-bottom: 3px;
+    display: flex;
+    position: relative;
+}
+.sitenav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: 0;   
+    right: 50%;
+    transition: width 0.5s ease;
+}
+.sitenav-link:hover.sitenav-link::after {
+    width: 50%;
+}
+.sitenav-link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: 0;   
+    left: 50%;
+    transition: width 0.5s ease;
+}
+.sitenav-link:hover.sitenav-link::before {
+    width: 50%;
+}
+.site-header-input {
+    width: 153px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    outline: none;
+}
