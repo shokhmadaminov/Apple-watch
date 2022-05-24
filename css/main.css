@@ -28,6 +28,7 @@
     --black-color: #000;
     --white-color: #fff;
     --seven-color: #777;
+    --brand-hover-color: #c9514c;
 }
 
 /* GLOBAL STYLES */
@@ -62,6 +63,21 @@ body {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+/* BUTTON STYLES */
+.red-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding: 12px 0px;
+    background-color: var(--brand-color);
+    display: inline-block;
+}
+.red-btn:hover {
+    background-color: var(--brand-hover-color);
 }
 
 /* SITE HEADER STYLES */
@@ -131,4 +147,44 @@ body {
     border: none;
     border-bottom: 1px solid var(--text-color);
     outline: none;
+}
+
+
+/* SITE MAIN STYLES */
+.site-main {
+    flex-grow: 1;
+}
+
+/* HERO SECTION STYLES */
+.hero-section {
+    padding: 140px 0px 185px;
+    background-image: url("../images/png/watch-img.png");
+    background-repeat: no-repeat;
+    background-size: 587px 565px;
+    background-position: calc(50% + 534px) bottom;
+    border-bottom: 2px solid #ddd;
+}
+.hero-section-container {
+    display: flex;
+}
+.hero-section-text-wrapper {
+    width: 100%;
+    max-width: 490px;
+}
+.hero-section-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.hero-section-text {
+    font-size: 16px;
+    color: var(--seven-color);
+    border-left: 3px solid #888;
+    padding-left: 37px;
+    margin-bottom: 30px;
+}
+.hero-section-btn {
+    padding: 12px 38.5px;
 }
